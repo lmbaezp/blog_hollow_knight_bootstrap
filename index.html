@@ -1,35 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Hollow Knigth</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Hollow Knight</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <a href="index.html" class="button">Inicio</a><br>
-        <a href="about.html" class="button">¿Quienes Somos?</a><br>
-        <a href="contacto.html" class="button">Contactanos</a>
+  <header>
+    <nav>
+      <div class="nav-buttons">
+        <button>Inicio</button>
+        <button>¿Quiénes Somos?</button>
+        <button>Contáctanos</button>
+      </div>
     </nav>
-    <footer class="footer-contenido">
-        <p>&copy; 2025 Hollow Knight. Todos los derechos reservados.</p>
-        <div class="lista-autores">
-            <p>Andrés Alfonso</p>
-            <p>Laura Báez</p>
-            <p>Sergio González</p>
-            <p>Natapa Guzmán</p>
-            <p>Nataly Ochoa</p>
+  </header>
+
+  <main>
+    <!-- PERSONAJE -->
+    <section class="contenido">
+      <div class="info">
+        <div class="texto">
+          <h2>¿Qué es Hollow Knight?</h2>
+          <p>Hollow Knight es un juego de acción y aventura en 2D, desarrollado por el estudio independiente Team Cherry. Se desarrolla en un vasto reino subterráneo llamado Hallownest, habitado por insectos y criaturas extrañas.</p>
+          <p>El juego destaca por su dificultad desafiante, arte visual dibujado a mano, música atmosférica y lore profundo.</p>
         </div>
-        <div class="datos">
-            <h3>HOLLOW KNIGHT</h3>
-            <p>hollow.knight@correo.com</p>
+        <div class="boton">
+          <button class="abrir-modal" data-modal="modal-personaje">Ver más sobre los personajes</button>
         </div>
-        <ul class="redes-sociales">
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </footer>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="contenido invertido">
+      <div class="info">
+        <div class="texto">
+          <h2>Exploración y mapa</h2>
+          <p>Hallownest es un mundo interconectado lleno de zonas únicas como Greenpath, Deepnest, City of Tears y más. La exploración es clave, y cada rincón esconde secretos y desafíos.</p>
+        </div>
+        <div class="boton">
+          <button class="abrir-modal" data-modal="modal-mapa">Ver el mapa completo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- JEFES -->
+    <section class="contenido">
+      <div class="info">
+        <div class="texto">
+          <h2>Jefes memorables</h2>
+          <p>El juego presenta más de 40 jefes, cada uno con mecánicas únicas. Desde el ágil Hornet hasta el temible Radiance, los combates son intensos y gratificantes.</p>
+        </div>
+        <div class="boton">
+          <button class="abrir-modal" data-modal="modal-jefes">Conoce a los jefes</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-contenido">
+    <p>&copy; 2025 Hollow Knight. Todos los derechos reservados.</p>
+    <div class="lista-autores">
+      <p>Andrés Alfonso</p>
+      <p>Laura Báez</p>
+      <p>Sergio González</p>
+      <p>Natapa Guzmán</p>
+      <p>Nataly Ochoa</p>
+    </div>
+    <div class="datos">
+      <h3>HOLLOW KNIGHT</h3>
+      <p>hollow.knight@correo.com</p>
+    </div>
+    <ul class="redes-sociales">
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
