@@ -115,3 +115,64 @@ footer {
 footer p {
   margin: 0.5rem 0;
 }
+
+/* CONTACTO */
+.contact-section {
+  max-width: 700px;
+  margin: auto;
+  background-color: #1a1a2e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+
+.info p {
+  margin: 5px 0;
+}
+textarea {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  color: #000000;
+  background-color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  resize: vertical; 
+  box-sizing: border-box;
+}
