@@ -28,7 +28,7 @@
           <p>El juego destaca por su dificultad desafiante, arte visual dibujado a mano, música atmosférica y lore profundo.</p>
         </div>
         <div class="boton">
-          <button class="abrir-modal" data-modal="modal-personaje">Ver más sobre los personajes</button>
+           <button onclick="abrirModal('personajes')">Ver mas sobre los Personajes</button>
         </div>
       </div>
     </section>
@@ -41,7 +41,7 @@
           <p>Hallownest es un mundo interconectado lleno de zonas únicas como Greenpath, Deepnest, City of Tears y más. La exploración es clave, y cada rincón esconde secretos y desafíos.</p>
         </div>
         <div class="boton">
-          <button class="abrir-modal" data-modal="modal-mapa">Ver el mapa completo</button>
+          <button onclick="abrirModal('mapas')">Ver el mapa completo</button>
         </div>
       </div>
     </section>
@@ -54,12 +54,19 @@
           <p>El juego presenta más de 40 jefes, cada uno con mecánicas únicas. Desde el ágil Hornet hasta el temible Radiance, los combates son intensos y gratificantes.</p>
         </div>
         <div class="boton">
-          <button class="abrir-modal" data-modal="modal-jefes">Conoce a los jefes</button>
+          <button onclick="abrirModal('jefes')">Conoce a los Jefes</button>
         </div>
       </div>
     </section>
+    <!-- Modales ocultos -->
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <div id="modal-texto"></div>
+    <img id="modal-imagen" src="" alt="Imagen informativa" />
+  </div>
+</div>
   </main>
-
   <footer class="footer-contenido">
     <p>&copy; 2025 Hollow Knight. Todos los derechos reservados.</p>
     <div class="lista-autores">
@@ -79,5 +86,6 @@
       <li><a href="#">Contacto</a></li>
     </ul>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
