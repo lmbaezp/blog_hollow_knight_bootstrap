@@ -30,108 +30,213 @@ function abrirModal(seccion) {
   switch(seccion) {
     case 'mapas':
   contenido = `
-    <h3>Mapas de Hallownest</h3>
-    <p>Uno de los aspectos más destacados de <strong>Hollow Knight</strong> es su enfoque en la exploración. Hollow Knight no tiene diálogos largos ni explicaciones claras: el jugador debe interpretar lo que pasa a partir de lo que ve, los personajes que encuentra, los escenarios y los objetos.</p>
-    <br>
-    <p>Aunque las zonas parecen separadas (como si fueran niveles distintos), en realidad todo el mapa está unido como un gran laberinto. No hay pantallas de carga entre zonas, y el jugador puede pasar de una a otra de forma fluida.</p>
-    <br>
-    <p>Esto le da al juego una estructura conocida como <i>"Metroidvania"</i>, un estilo de juego en el que:</p>
+    <h3>🗺️ Mapas de Hallownest</h3>
+    <p><strong>Hollow Knight</strong> es un juego de exploración que premia la curiosidad. No hay marcadores de misión ni flechas que te guíen: debes construir tu propio camino.</p>
+    
+    <p>Los mapas se desbloquean parcialmente cuando encuentras a <strong>Cornifer</strong> 🐛, el simpático cartógrafo que canta mientras trabaja. Luego puedes mejorar ese mapa comprando la pluma en la tienda de <strong>Iselda</strong> 🧓.</p>
+    
+    <p><strong>🎮 Estilo Metroidvania:</strong></p>
     <ul>
-        <li>No hay un solo camino lineal.</li>
-        <li>Se puede volver a zonas anteriores con nuevas habilidades para desbloquear secretos.</li>
-        <li>El progreso depende de explorar, recordar rutas y probar caminos nuevos.</li>
+      <li>Exploración no lineal 🚪.</li>
+      <li>Habilidades como el doble salto o el dash desbloquean nuevos caminos 🌀.</li>
+      <li>Tu progreso depende de observar, recordar y atreverte a volver sobre tus pasos 🧠.</li>
     </ul>
-    <br>
-    <p>Al inicio, el jugador no tiene un mapa completo. Para poder orientarse, debe encontrar a un personaje llamado <strong>Cornifer</strong>, un cartógrafo que está escondido en cada zona. Al encontrarlo, se puede comprar un mapa inicial del área. Luego, con una pluma (también comprable), el jugador puede ir completando el mapa mientras explora.</p>
-    <br>
-    <p>El mapa no se actualiza automáticamente: solo se actualiza cuando el jugador descansa en un banco, que funciona como punto de guardado.</p>
-    <br>
-    <p>🧭 <strong>Zonas principales de Hallownest:</strong> Cada zona tiene un ambiente único, enemigos distintos, música propia y muchos secretos. Algunas de las más conocidas son:</p>
+    
+    <p><strong>🌍 Zonas destacadas de Hallownest:</strong></p>
     <ul>
-        <li><strong>Greenpath</strong>: una región exuberante y verde, con vegetación espesa, agua ácida y enemigos rápidos. Es de las primeras zonas que se exploran.</li>
-        <li><strong>Deepnest</strong>: un lugar oscuro, enredado como una telaraña, lleno de insectos agresivos y trampas. Es una de las zonas más inquietantes del juego.</li>
-        <li><strong>City of Tears</strong>: una ciudad majestuosa donde siempre llueve. Aquí hay muchos secretos escondidos entre edificios abandonados y enemigos más fuertes.</li>
-        <li><strong>Crystal Peak</strong>: una mina llena de cristales brillantes, plataformas móviles y peligros eléctricos. Su dificultad es mayor que otras zonas tempranas.</li>
-        <li><strong>Fog Canyon</strong>, <strong>Fungal Wastes</strong>, <strong>Kingdom's Edge</strong>, <strong>Royal Waterways</strong> y más: cada una tiene su historia, desafíos y enemigos característicos.</li>
+      <li><strong>Greenpath:</strong> vegetación salvaje, agua ácida y enemigos que explotan 🍃.</li>
+      <li><strong>Deepnest:</strong> un laberinto oscuro, con criaturas que se arrastran 🕷️.</li>
+      <li><strong>City of Tears:</strong> una ciudad antigua que llora eternamente 🌧️.</li>
+      <li><strong>Crystal Peak:</strong> cristales rosados, plataformas traicioneras y rayos láser 💎⚡.</li>
+      <li><strong>Queen's Gardens:</strong> naturaleza salvaje y guardianes sigilosos 🌸.</li>
+      <li><strong>Kingdom's Edge:</strong> borde del reino, lleno de cenizas y desafíos 🏔️.</li>
     </ul>
-    <br>
-    <p>🔍 <strong>¿Qué se encuentra al explorar?</strong> Explorar no solo permite avanzar: también se descubren cosas como:</p>
+
+    <p><strong>📌 Tipos de mapas:</strong></p>
     <ul>
-        <li>Fragmentos de máscara para aumentar la salud.</li>
-        <li>Fragmentos de alma para mejorar la magia.</li>
-        <li>Encantamientos (charms) que modifican habilidades.</li>
-        <li>Jefes ocultos y finales alternativos del juego.</li>
-        <li>NPCs (personajes) que revelan la historia de Hallownest.</li>
+      <li><strong>Mapas regionales:</strong> se obtienen de Cornifer en cada área 🗺️.</li>
+      <li><strong>Mapa completo:</strong> se va armando explorando bancos y salas visitadas 🪑.</li>
+      <li><strong>Mapa de sueños:</strong> revela zonas oníricas e interiores escondidos 🌙.</li>
     </ul>
+
+    <p><strong>🔍 Al explorar puedes encontrar:</strong></p>
+    <ul>
+      <li>Fragmentos de máscara ❤️ y recipiente de alma ✨ para mejorar tu resistencia.</li>
+      <li>Amuletos con efectos únicos como doble curación o detección de enemigos 🔮.</li>
+      <li>Jefes opcionales que dan acceso a finales secretos 🕵️‍♂️.</li>
+      <li>NPCs que completan la historia y te ofrecen misiones escondidas 📖.</li>
+    </ul>
+
+    <p><strong>🧭 Recomendación:</strong> compra marcadores en la tienda de Iselda para señalar en tu mapa lugares importantes: bancos, capullos de larvas, entradas bloqueadas o zonas aún sin explorar.</p>
+
+    <p>💡 <em>Explorar Hallownest es como armar un rompecabezas gigante:</em> cada rincón está conectado, y regresar a zonas antiguas con nuevas habilidades revela secretos escondidos. ¡Atrévete a perderte! 🌌</p>
+    
+    <div class="info-img">
+      <img src="Mapa.jpg" alt="Mapa de Hallownest">
+    </div>
   `;
-  imagen = "https://preview.redd.it/x428m90hsqc41.jpg?auto=webp&s=1919acd02748669b40d3ccbdf53bae6fca2489e9";
+  modalImagen.style.display = "none";
   break;
     case 'personajes':
-      contenido = 
-      imagen = "img/personajes-ejemplo.jpg";
-      break;
+  contenido = `
+    <h3>Personajes de Hollow Knight</h3>
+<p>El mundo de <strong>Hollow Knight</strong> está habitado por misteriosos personajes que enriquecen la historia sin necesidad de largos diálogos. Cada encuentro revela pistas sobre el pasado de Hallownest y su caída.</p>
+<br>
+
+<!-- El Caballero -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+  <div style="flex: 1;">
+    <h4>🦗 El Caballero (The Knight)</h4>
+    <p>Es el protagonista silencioso del juego. Sin nombre ni voz, su historia se revela a medida que exploras. Porta un aguijón afilado (nail) y puede adquirir poderes mágicos y habilidades especiales. Su origen está ligado a los secretos más profundos del reino ⚔️.</p>
+  </div>
+  <img src="ElCaballero.jpg" alt="El Caballero" style="width: 150px; border-radius: 12px;">
+</div>
+
+<!-- Quirrel -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+  <div style="flex: 1;">
+    <h4>🧢 Quirrel</h4>
+    <p>Un viajero amable y curioso. A menudo lo encontrarás explorando ruinas o admirando paisajes. Aunque parece despreocupado, su historia está conectada con el pasado trágico de Hallownest y un antiguo maestro llamado Monomon la Sabia 🐚.</p>
+  </div>
+  <img src="Quirrel.jpg" alt="Quirrel" style="width: 150px; border-radius: 12px;">
+</div>
+
+<!-- Cornifer -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+  <div style="flex: 1;">
+    <h4>🗺️ Cornifer</h4>
+    <p>El cartógrafo alegre que silba mientras trabaja. Lo encontrarás en varias zonas vendiendo mapas que son esenciales para no perderte. Su esposa, Iselda, también tiene una tienda de mapas en Dirtmouth 📜.</p>
+  </div>
+  <img src="Cornifer.png" alt="Cornifer" style="width: 150px; border-radius: 12px;">
+</div>
+
+<!-- Bretta -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+  <div style="flex: 1;">
+    <h4>🐞 Bretta</h4>
+    <p>Una pequeña escarabajo tímida que admira al Caballero. La encontrarás atrapada en Fungal Wastes. Si la rescatas, regresa a Dirtmouth con una historia graciosa y una actitud muy peculiar sobre su "héroe" 💌.</p>
+  </div>
+  <img src="Bretta.jpg" alt="Bretta" style="width: 150px; border-radius: 12px;">
+</div>
+
+<!-- Chamán del Caracol -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+  <div style="flex: 1;">
+    <h4>🧙‍♂️ Chamán del Caracol (Snail Shaman)</h4>
+    <p>Un personaje excéntrico que otorga al Caballero su primer hechizo. Vive en una cueva oculta y tiene un conocimiento profundo de la magia de alma 🔮.</p>
+  </div>
+  <img src="Chaman.png" alt="Snail Shaman" style="width: 150px; border-radius: 12px;">
+</div>
+
+<p style="margin-top: 30px;">💬 <em>Estos personajes no solo ayudan en tu aventura, también ofrecen momentos emocionales, misteriosos y hasta divertidos. Interactuar con ellos es clave para entender la historia y sentirte parte del mundo de Hallownest 🌌.</em></p>
+  `;
+  modalImagen.style.display = "none";
+  break;
     case 'jefes':
-      contenido = `Falso Caballero : 
-	Descripción:
-			El Falso Caballero es uno de los primeros Jefes de Hollow Knight. El tiene el Emblema de la Ciudad, artefacto necesario para abrir las puertas a la 				Ciudad de Lágrimas. Campeón Fallido es su forma Onírica, más rápida y fuerte.
-	Ubicación:
-			Cruces Olvidados
-			Hogar de Dioses
+      contenido = `
+    <div class="info-section">
+      <div class="info-text">
+        <h3>Falso Caballero</h3>
+        <p><strong>Descripción:</strong> Uno de los primeros Jefes de Hollow Knight. Tiene el Emblema de la Ciudad, necesario para abrir la Ciudad de Lágrimas. Su forma Onírica es Campeón Fallido.</p>
+        <p><strong>Ubicación:</strong> Cruces Olvidados, Hogar de Dioses</p>
+      </div>
+      <div class="info-img">
+        <img src="Falso_Caballero.png" alt="Falso Caballero">
+      </div>
+    </div>
 
-Gran Sabio del Aguijón Sly : 
-	Descripción:
-			El Gran Sabio del Aguijón Sly es un Jefe de misión en Hollow Knight. Introducido en el DLC Buscador de Dioses. Sly te espera en la Cima del Panteón del 			Sabio en el Hogar de Dioses.
-	Ubicación:
-			Hogar de Dioses
+    <div class="info-section">
+      <div class="info-text">
+        <h3>Gran Sabio del Aguijón Sly</h3>
+        <p><strong>Descripción:</strong> Introducido en el DLC Buscador de Dioses. Te espera en el Panteón del Sabio.</p>
+        <p><strong>Ubicación:</strong> Hogar de Dioses</p>
+      </div>
+      <div class="info-img">
+        <img src="Gran_Sabio.png" alt="Sly">
+      </div>
+    </div>
 
-Grimm : 
-	Descripción:
-			Grimm es un NPC y a su vez un jefe introducido con el DLC: La Compañía de Grimm en Hollow Knight. Es el personaje principal de su misión.
-	Ubicación:
-			Bocasucia
-			Hogar de Dioses
+    <div class="info-section">
+      <div class="info-text">
+        <h3>Grimm</h3>
+        <p><strong>Descripción:</strong> Jefe y NPC principal del DLC "La Compañía de Grimm".</p>
+        <p><strong>Ubicación:</strong> Bocasucia, Hogar de Dioses</p>
+      </div>
+      <div class="info-img">
+        <img src="Grimm.png" alt="Grimm">
+      </div>
+    </div>
 
-Hornet : 
-	Descripción:
-			Es un personaje que se encontrará seis veces, cinco de ellas en la historia del juego y la última en el jefe final.
-	Ubicación:
-			Greenpath
+        <div class="info-section">
+      <div class="info-text">
+        <h3>Hornet</h3>
+        <p><strong>Descripción:</strong> Es un personaje que se encontrará seis veces, cinco de ellas en la historia del juego y la última en el jefe final.</p>
+        <p><strong>Ubicación:</strong> Greenpath
 			City of Tears
 			Kingdom's Edge
 			Deepnest
 			Ancient Basin
-			Forgotten Crosssroads
+			Forgotten Crosssroads</p>
+      </div>
+      <div class="info-img">
+        <img src="Hornet.png" alt="Grimm">
+      </div>
+    </div>
 
-Señores Mantis : 
-	Descripción:
-			Los Señores Mantis son un jefe opcional en Hollow Knight. Derrotarlos garantiza un paso seguro por la Aldea Mantis. Las  Hermanas de 					Batalla son su forma más fuerte.
-	Ubicación:
-			Aldea Mantis
+        <div class="info-section">
+      <div class="info-text">
+        <h3>Señores Mantis</h3>
+        <p><strong>Descripción:</strong>Los Señores Mantis son un jefe opcional en Hollow Knight. Derrotarlos garantiza un paso seguro por la Aldea Mantis. Las  Hermanas de Batalla son su forma más fuerte.</p>
+        <p><strong>Ubicación:</strong> Greenpath
+Aldea Mantis</p>
+      </div>
+      <div class="info-img">
+        <img src="Señores_Mantis.png" alt="Grimm">
+      </div>
+    </div>
 
-Hollow Knight: 
-	Descripción:
-			El Hollow Knight es uno de los Jefes principales de Hollow Knight. Es el centro (por decirlo de alguna forma) del viaje del Caballero y la historia de 			Hallownest. Vasija Pura es su forma no infectada.
-	Ubicación:
-			Templo del Huevo Negro
+        <div class="info-section">
+      <div class="info-text">
+        <h3>Hollow Knight</h3>
+        <p><strong>Descripción:</strong>El Hollow Knight es uno de los Jefes principales de Hollow Knight. Es el centro (por decirlo de alguna forma) del viaje del Caballero y la historia de Hallownest. Vasija Pura es su forma no infectada.</p>
+        <p><strong>Ubicación:</strong> Greenpath
+Templo del Huevo Negro</p>
+      </div>
+      <div class="info-img">
+        <img src="Hollow_Knight.png" alt="Grimm">
+      </div>
+    </div>
 
-Destello: 
-	Descripción:
-			El Destello es el jefe final secreto de Hollow Knight. Absoluto Destello es su forma perfecta.
-	Ubicación:
-			Templo del Huevo Negro
+         <div class="info-section">
+      <div class="info-text">
+        <h3>Destello</h3>
+        <p><strong>Descripción:</strong>El Destello es el jefe final secreto de Hollow Knight. Absoluto Destello es su forma perfecta.</p>
+        <p><strong>Ubicación:</strong> Greenpath
+Templo del Huevo Negro</p>
+      </div>
+      <div class="info-img">
+        <img src="Destello.png" alt="Grimm">
+      </div>
+    </div>
 
-Zote el Todopoderoso: 
-	Descripción:
-			Zote es un viajero de las afueras de Hallownest. Él vino al reino para cumplir una promesa; después se revela que fue una promesa de gloria para si 			mismo. Tiene cinco apariciones en la historia.
-	Ubicación:
+        <div class="info-section">
+      <div class="info-text">
+        <h3>Zote el Todopoderoso</h3>
+        <p><strong>Descripción:</strong>Zote es un viajero de las afueras de Hallownest. Él vino al reino para cumplir una promesa; después se revela que fue una promesa de gloria para si mismo. Tiene cinco apariciones en la historia.</p>
+        <p><strong>Ubicación:</strong> Greenpath
 			Sendero Verde
 			Bocasucia
 			Ciudad de lágrimas
 			Nido Profundo
-			Coliseo de los insensatos
-      `;
-      imagen = "img/jefes-ejemplo.jpg";
-      break;
+			Coliseo de los insensatos</p>
+      </div>
+      <div class="info-img">
+        <img src="Zote.png" alt="Grimm">
+      </div>
+    </div>
+  `;
+  modalImagen.style.display = "none";
+  break;
   }
 
   modalTexto.innerHTML = contenido;

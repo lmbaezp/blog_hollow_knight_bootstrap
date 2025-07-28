@@ -26,7 +26,17 @@ nav {
   justify-content: center;
   z-index: 1000;
 }
-
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 nav .nav-buttons {
   display: flex;
   gap: 20px;
@@ -46,7 +56,20 @@ nav button {
 nav button:hover {
   background-color: #505050;
 }
+.nav-center-image {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%);
+}
 
+.nav-center-image img {
+  max-height: 55px;
+}
+/* Logo */
+.logo-hollow {
+  height: 50px;
+  object-fit: contain;
+}
 /* Espaciado para compensar el nav fijo */
 main {
   padding-top: 120px;
@@ -78,7 +101,6 @@ main {
   max-width: 700px;
   margin: 0 auto;
 }
-
 /* Secciones de contenido */
 .contenido {
   display: flex;
@@ -180,7 +202,43 @@ footer p {
 .redes-sociales a:hover {
   transform: scale(1.2);
 }
+/*QUIENES SOMOS*/
+.quienes-somos {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #111; /* Asegura contraste con fondo oscuro */
+  color: #fff;
+  border-radius: 15px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
 
+.quienes-somos h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.bloque-texto {
+  margin-bottom: 25px;
+  padding-left: 10px;
+  border-left: 4px solid #555;
+  transition: border-color 0.3s;
+}
+
+.bloque-texto:hover {
+  border-color: #888; /* Cambia color al pasar el mouse */
+}
+
+.bloque-texto p {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #90caf9; /* azul claro para destacar palabras como SCRUM o Hollow Knight */
+}
 /* CONTACTO */
 .contact-section {
   max-width: 700px;
