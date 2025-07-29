@@ -30,19 +30,20 @@ function abrirModal(seccion) {
   switch(seccion) {
     case 'mapas':
   contenido = `
-    <h3>🗺️ Mapas de Hallownest</h3>
+  <div class="contenido-izquierda">
+    <h3>🗺️ Mapas de Hallownest</h3><br>
     <p><strong>Hollow Knight</strong> es un juego de exploración que premia la curiosidad. No hay marcadores de misión ni flechas que te guíen: debes construir tu propio camino.</p>
     
-    <p>Los mapas se desbloquean parcialmente cuando encuentras a <strong>Cornifer</strong> 🐛, el simpático cartógrafo que canta mientras trabaja. Luego puedes mejorar ese mapa comprando la pluma en la tienda de <strong>Iselda</strong> 🧓.</p>
-    
-    <p><strong>🎮 Estilo Metroidvania:</strong></p>
+    <p>Los mapas se desbloquean parcialmente cuando encuentras a <strong>Cornifer</strong>, el simpático cartógrafo que canta mientras trabaja. Luego puedes mejorar ese mapa comprando la pluma en la tienda de <strong>Iselda</strong>.</p>
+    <br>
+    <h3>🎮 Estilo Metroidvania:</h3><br>
     <ul>
-      <li>Exploración no lineal 🚪.</li>
+      <li>Exploración no lineal.</li>
       <li>Habilidades como el doble salto o el dash desbloquean nuevos caminos 🌀.</li>
       <li>Tu progreso depende de observar, recordar y atreverte a volver sobre tus pasos 🧠.</li>
     </ul>
     
-    <p><strong>🌍 Zonas destacadas de Hallownest:</strong></p>
+    <h3>🌍 Zonas destacadas de Hallownest:</h3><br>
     <ul>
       <li><strong>Greenpath:</strong> vegetación salvaje, agua ácida y enemigos que explotan 🍃.</li>
       <li><strong>Deepnest:</strong> un laberinto oscuro, con criaturas que se arrastran 🕷️.</li>
@@ -51,28 +52,29 @@ function abrirModal(seccion) {
       <li><strong>Queen's Gardens:</strong> naturaleza salvaje y guardianes sigilosos 🌸.</li>
       <li><strong>Kingdom's Edge:</strong> borde del reino, lleno de cenizas y desafíos 🏔️.</li>
     </ul>
-
-    <p><strong>📌 Tipos de mapas:</strong></p>
+<br>
+    <h3>📌 Tipos de mapas:</h3><br>
     <ul>
       <li><strong>Mapas regionales:</strong> se obtienen de Cornifer en cada área 🗺️.</li>
       <li><strong>Mapa completo:</strong> se va armando explorando bancos y salas visitadas 🪑.</li>
       <li><strong>Mapa de sueños:</strong> revela zonas oníricas e interiores escondidos 🌙.</li>
     </ul>
-
-    <p><strong>🔍 Al explorar puedes encontrar:</strong></p>
+<br>
+    <h3>🔍 Al explorar puedes encontrar:</h3><br>
     <ul>
       <li>Fragmentos de máscara ❤️ y recipiente de alma ✨ para mejorar tu resistencia.</li>
       <li>Amuletos con efectos únicos como doble curación o detección de enemigos 🔮.</li>
       <li>Jefes opcionales que dan acceso a finales secretos 🕵️‍♂️.</li>
       <li>NPCs que completan la historia y te ofrecen misiones escondidas 📖.</li>
     </ul>
-
+<br>
     <p><strong>🧭 Recomendación:</strong> compra marcadores en la tienda de Iselda para señalar en tu mapa lugares importantes: bancos, capullos de larvas, entradas bloqueadas o zonas aún sin explorar.</p>
-
+<br>
     <p>💡 <em>Explorar Hallownest es como armar un rompecabezas gigante:</em> cada rincón está conectado, y regresar a zonas antiguas con nuevas habilidades revela secretos escondidos. ¡Atrévete a perderte! 🌌</p>
     
     <div class="info-img">
       <img src="Mapa.jpg" alt="Mapa de Hallownest">
+    </div>
     </div>
   `;
   modalImagen.style.display = "none";
