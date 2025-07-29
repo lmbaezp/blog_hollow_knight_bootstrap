@@ -7,12 +7,11 @@
 
 /* Tipografía oscura */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000;
-  color: #e0e0e0;
-  line-height: 1.6;
-  position: relative;
-  z-index: 1;
+  margin: 0;
+  background-image: url('https://images2.alphacoders.com/806/806254.jpg');
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
 }
 
 /* Navegación */
@@ -84,11 +83,16 @@ main {
 
 /* Hero section */
 .hero {
-  background: url('https://i.imgur.com/4oKO0Ll.jpg') center/cover no-repeat;
+  background: rgba(0, 0, 0, 0.5);  /* Oscuro semitransparente */
   padding: 4rem 2rem;
   text-align: center;
   color: #fff;
-  background-attachment: fixed;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  max-width: 100px;
+  margin: 2rem auto;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
 }
 
 .hero h1 {
@@ -135,30 +139,6 @@ main {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(156, 201, 255, 0.3);
-}
-
-/* Fondos laterales */
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 15vw;
-  background-image: url('https://images2.alphacoders.com/806/806254.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.35;
-  z-index: 0;
-  background-blend-mode: soft-light;
-  filter: blur(2px);
-}
-
-body::before {
-  left: 0;
-}
-body::after {
-  right: 0;
 }
 
 /* Footer */
