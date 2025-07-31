@@ -2,116 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quienes somos?</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Quienes somos?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow">
+
+    <nav id="targetNavBar" class="navbar">
+      <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
+      <div class="nav-center-image">
+        <a href="index.html"><img src="Icono.png" alt="Personaje Hollow Knight" class="center-logo"></a>
       </div>
-                  <div class="nav-center-image">
-        <img src="Icono.png" alt="Personaje Hollow Knight" class="center-logo">
-      </div>
-      <div class="nav-buttons">
-        <a href="index.html"><button>Inicio</button></a>
-        <a href="about.html"><button>¿Quiénes Somos?</button></a>
-        <a href="contacto.html"><button>Contáctanos</button></a>
-      </div>
+      <ul class="nav nav-pills">
+        <li class="nav-item m-2 dropdown">
+          <a class="nav-link nav-button dropdown-toggle" data-bs-toggle="dropdown" href="index.html" role="button"
+            aria-expanded="false">Inicio</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item drop-item" href="index.html#contenido">¿Qué es?</a></li>
+            <li><a class="dropdown-item drop-item" href="index.html#mapa">Exploración y mapa</a></li>
+            <li><a class="dropdown-item drop-item" href="index.html#jefes">Jefes memorables</a></li>
+          </ul>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link nav-button" href="about.html">¿Quienes somos?</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link nav-button" href="contacto.html">Contáctanos</a>
+        </li>
+      </ul>
     </nav>
   </header>
-    <main class="container py-5">
-       <section class="quienes-somos">
-    <h1 class="display-4 text-center animate__animated animate__fadeInDown mb-4">¿Quiénes somos?</h1>
 
-    <div class="bloque-texto">
-      <p>
-        Somos un equipo multidisciplinario formado por desarrolladores, gamers apasionados y amantes del diseño web que comparten una profunda admiración por uno de los títulos más cautivadores del mundo indie: <strong>Hollow Knight</strong>.
-      </p>
-    </div>
+  <main class="container py-5">
+    <section class="quienes-somos">
+      <h1 class="display-4 text-center animate__animated animate__fadeInDown mb-4">¿Quiénes somos?</h1>
 
-    <div class="bloque-texto">
-      <p>
-        Lo que comenzó como una conversación casual sobre los elementos artísticos y narrativos del juego, terminó convirtiéndose en una misión compartida por crear este blog: una plataforma dedicada a explorar y celebrar todo lo que hace de Hallownest un lugar inolvidable.
-      </p>
-    </div>
+      <div class="bloque-texto">
+        <p>
+          Somos un equipo multidisciplinario formado por desarrolladores, gamers apasionados y amantes del diseño web
+          que comparten una profunda admiración por uno de los títulos más cautivadores del mundo indie: <strong>Hollow
+            Knight</strong>.
+        </p>
+      </div>
 
-    <div class="bloque-texto">
-      <p>
-        Este espacio digital nace de nuestra fascinación por el universo sombrío pero bellamente detallado de Hollow Knight. Nos intrigan sus secretos ocultos, sus criaturas melancólicas y el nivel de arte que, sencillamente, trasciende lo visual. Creemos que este juego no solo entretiene, sino que invita a reflexionar, a teorizar y a conectar emocionalmente con sus historias y sus silencios.
-      </p>
-      <p>
-        Por eso, este blog no es solo una fuente de contenido; es un lugar de encuentro para quienes ven en este mundo más que enemigos que derrotar.
-      </p>
-    </div>
+      <div class="bloque-texto">
+        <p>
+          Lo que comenzó como una conversación casual sobre los elementos artísticos y narrativos del juego, terminó
+          convirtiéndose en una misión compartida por crear este blog: una plataforma dedicada a explorar y celebrar
+          todo lo que hace de Hallownest un lugar inolvidable.
+        </p>
+      </div>
 
-    <div class="bloque-texto">
-      <p>
-        Desde análisis en profundidad del lore hasta secciones dedicadas al arte creado por fans, pasando por curiosidades y guías, cada rincón del blog ha sido diseñado con cariño y atención a los detalles. Queremos que cualquier lector, sea nuevo en el juego o un veterano de las cavernas, encuentre algo que le inspire.
-      </p>
-    </div>
+      <div class="bloque-texto">
+        <p>
+          Este espacio digital nace de nuestra fascinación por el universo sombrío pero bellamente detallado de Hollow
+          Knight. Nos intrigan sus secretos ocultos, sus criaturas melancólicas y el nivel de arte que, sencillamente,
+          trasciende lo visual. Creemos que este juego no solo entretiene, sino que invita a reflexionar, a teorizar y a
+          conectar emocionalmente con sus historias y sus silencios.
+        </p>
+        <p>
+          Por eso, este blog no es solo una fuente de contenido; es un lugar de encuentro para quienes ven en este mundo
+          más que enemigos que derrotar.
+        </p>
+      </div>
 
-    <div class="bloque-texto">
-      <p>
-        Además, este sitio web forma parte de una simulación académica del desarrollo ágil bajo el marco de trabajo <strong>SCRUM</strong>. Hemos trabajado como un equipo real: con roles claros, sprints, retrospectivas y colaboración constante.
-      </p>
-      <p>
-        Esto nos ha permitido experimentar no solo el desarrollo técnico, sino también la importancia de la comunicación, el diseño centrado en el usuario y la adaptabilidad en entornos creativos.
-      </p>
-    </div>
-         
+      <div class="bloque-texto">
+        <p>
+          Desde análisis en profundidad del lore hasta secciones dedicadas al arte creado por fans, pasando por
+          curiosidades y guías, cada rincón del blog ha sido diseñado con cariño y atención a los detalles. Queremos que
+          cualquier lector, sea nuevo en el juego o un veterano de las cavernas, encuentre algo que le inspire.
+        </p>
+      </div>
 
-        <main class="container py-5">
-          <h2 class="titulo-seccion">Nuestro equipo detrás del blog ✨</h2>
-        
-          <div class="equipo">
-            <div class="miembro">
-              <p><strong>Nataly Ochoa</strong> – Desarrolladora Jr FullStack Java</p>
-            </div>
-            <div class="miembro">
-              <p><strong>Laura Báez</strong> – Desarrolladora Jr FullStack Java</p>
-            </div>
-            <div class="miembro">
-              <p><strong>Andrés Alfonso</strong> – Desarrollador Jr FullStack Java</p>
-            </div>
-            <div class="miembro">
-              <p><strong>Natalia Guzmán</strong> – Desarrolladora Jr FullStack Java</p>
-            </div>
-            <div class="miembro">
-              <p><strong>Sergio González</strong> – Desarrollador Jr FullStack Java</p>
-            </div>
+      <div class="bloque-texto">
+        <p>
+          Además, este sitio web forma parte de una simulación académica del desarrollo ágil bajo el marco de trabajo
+          <strong>SCRUM</strong>. Hemos trabajado como un equipo real: con roles claros, sprints, retrospectivas y
+          colaboración constante.
+        </p>
+        <p>
+          Esto nos ha permitido experimentar no solo el desarrollo técnico, sino también la importancia de la
+          comunicación, el diseño centrado en el usuario y la adaptabilidad en entornos creativos.
+        </p>
+      </div>
+
+
+      <main class="container py-5">
+        <h2 class="titulo-seccion">Nuestro equipo detrás del blog ✨</h2>
+
+        <div class="equipo">
+          <div class="miembro">
+            <p><strong>Nataly Ochoa</strong> – Desarrolladora Jr FullStack Java</p>
           </div>
-        </main>
-
-       </section>
-    </main>
-
-
-    <footer class="footer-contenido">
-        <p>&copy; 2025 Hollow Knight. Todos los derechos reservados.</p>
-        <div class="lista-autores">
-            <p>Andrés Alfonso</p>
-            <p>Laura Báez</p>
-            <p>Sergio González</p>
-            <p>Natapa Guzmán</p>
-            <p>Nataly Ochoa</p>
+          <div class="miembro">
+            <p><strong>Laura Báez</strong> – Desarrolladora Jr FullStack Java</p>
+          </div>
+          <div class="miembro">
+            <p><strong>Andrés Alfonso</strong> – Desarrollador Jr FullStack Java</p>
+          </div>
+          <div class="miembro">
+            <p><strong>Natalia Guzmán</strong> – Desarrolladora Jr FullStack Java</p>
+          </div>
+          <div class="miembro">
+            <p><strong>Sergio González</strong> – Desarrollador Jr FullStack Java</p>
+          </div>
         </div>
-        <div class="datos">
-            <h3>HOLLOW KNIGHT</h3>
-            <p>hollow.knight@correo.com</p>
-        </div>
-        <ul class="redes-sociales">
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </footer>
+      </main>
+
+    </section>
+  </main>
+
+  <footer class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5">
+    <div>
+      <p>&copy; 2025 Hollow Knight</p>
+      <p>Todos los derechos reservados.</p>
+    </div>
+    <div class="lista-autores d-flex">
+      <ul class="">
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Nataly Ochoa</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Natalia Guzmán</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li></a>
+      </ul>
+      <ul>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Laura Báez</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Sergio González</li></a>
+      </ul>
+    </div>
+    <div class="datos d-flex flex-lg-row flex-sm-column align-items-center">
+      <div class="text-center me-lg-5 me-1">
+        <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
+        <p>hollow.knight@hollowcomunidad.com</p>
+      </div>
+      <div class="redes-sociales d-flex flex-column">
+      
+        <a href="https://github.com/lmbaezp/blog_hollow_knight_bootstrap"><i class="bi bi-github fs-1"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
+        <a href="contacto.html"><i class="bi bi-envelope-fill fs-1"></i></a>
+      
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

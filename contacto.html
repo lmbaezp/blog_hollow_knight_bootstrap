@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto – Comunidad Hollow Knight</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow">
-            </div>
-            
-            <div class="nav-center-image">
-                <img src="Icono.png" alt="Personaje Hollow Knight" class="center-logo">
-            </div>
-            <div class="nav-buttons">
-                <a href="index.html"><button>Inicio</button></a>
-                <a href="about.html"><button>¿Quiénes Somos?</button></a>
-                <a href="contacto.html"><button>Contáctanos</button></a>
-            </div>
-        </nav>
-    </header>
+
+    <nav id="targetNavBar" class="navbar">
+      <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
+      <div class="nav-center-image">
+        <a href="index.html"><img src="Icono.png" alt="Personaje Hollow Knight" class="center-logo"></a>
+      </div>
+      <ul class="nav nav-pills">
+        <li class="nav-item m-2 dropdown">
+          <a class="nav-link nav-button dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Inicio</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item drop-item" href="index.html#contenido">¿Qué es?</a></li>
+            <li><a class="dropdown-item drop-item" href="index.html#mapa">Exploración y mapa</a></li>
+            <li><a class="dropdown-item drop-item" href="index.html#jefes">Jefes memorables</a></li>
+          </ul>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link nav-button" href="about.html">¿Quienes somos?</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link nav-button" href="contacto.html">Contáctanos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <div class="contact-section">
         <div class="container-fluid">
@@ -49,24 +58,29 @@
                         <div class="card-body">
                             <div class="list-group list-group-flush">
                                 <div class="list-group-item bg-transparent border-0 text-white">
-                                    <strong><i class="fas fa-life-ring me-2"></i>Soporte general:</strong> 
-                                    <a href="mailto:Nataly_Ochoa@hollowcomunidad.com" class="text-info">Nataly_Ochoa@hollowcomunidad.com</a>
+                                    <strong><i class="fas fa-life-ring me-2"></i>Soporte general:</strong>
+                                    <a href="mailto:Nataly_Ochoa@hollowcomunidad.com"
+                                        class="text-info">Nataly_Ochoa@hollowcomunidad.com</a>
                                 </div>
                                 <div class="list-group-item bg-transparent border-0 text-white">
-                                    <strong><i class="fas fa-calendar-alt me-2"></i>Organización de eventos:</strong> 
-                                    <a href="mailto:Andres_Alfonso@hollowcomunidad.com" class="text-info">Andres_Alfonso@hollowcomunidad.com</a>
+                                    <strong><i class="fas fa-calendar-alt me-2"></i>Organización de eventos:</strong>
+                                    <a href="mailto:Andres_Alfonso@hollowcomunidad.com"
+                                        class="text-info">Andres_Alfonso@hollowcomunidad.com</a>
                                 </div>
                                 <div class="list-group-item bg-transparent border-0 text-white">
-                                    <strong><i class="fas fa-lightbulb me-2"></i>Sugerencias y feedback:</strong> 
-                                    <a href="mailto:Natalia_Guzman@hollowcomunidad.com" class="text-info">Natalia_Guzman@hollowcomunidad.com</a>
+                                    <strong><i class="fas fa-lightbulb me-2"></i>Sugerencias y feedback:</strong>
+                                    <a href="mailto:Natalia_Guzman@hollowcomunidad.com"
+                                        class="text-info">Natalia_Guzman@hollowcomunidad.com</a>
                                 </div>
                                 <div class="list-group-item bg-transparent border-0 text-white">
-                                    <strong><i class="fas fa-user-tie me-2"></i>Dirección General:</strong> 
-                                    <a href="mailto:Laura_Baez@hollowcomunidad.com" class="text-info">Laura_Baez@hollowcomunidad.com</a>
+                                    <strong><i class="fas fa-user-tie me-2"></i>Dirección General:</strong>
+                                    <a href="mailto:Laura_Baez@hollowcomunidad.com"
+                                        class="text-info">Laura_Baez@hollowcomunidad.com</a>
                                 </div>
                                 <div class="list-group-item bg-transparent border-0 text-white">
-                                    <strong><i class="fas fa-project-diagram me-2"></i>Proyectos:</strong> 
-                                    <a href="mailto:Sergio_Gonzales@hollowcomunidad.com" class="text-info">Sergio_Gonzales@hollowcomunidad.com</a>
+                                    <strong><i class="fas fa-project-diagram me-2"></i>Proyectos:</strong>
+                                    <a href="mailto:Sergio_Gonzales@hollowcomunidad.com"
+                                        class="text-info">Sergio_Gonzales@hollowcomunidad.com</a>
                                 </div>
                             </div>
                         </div>
@@ -81,10 +95,10 @@
                                     <h3><i class="fas fa-phone me-2"></i>Teléfonos</h3>
                                 </div>
                                 <div class="card-body">
-                                    <p class="mb-2"><strong><i class="fas fa-phone-alt me-2"></i>Principal:</strong> 
+                                    <p class="mb-2"><strong><i class="fas fa-phone-alt me-2"></i>Principal:</strong>
                                         <a href="tel:+322123456" class="text-info">+322 123 456</a>
                                     </p>
-                                    <p class="mb-0"><strong><i class="fas fa-calendar-check me-2"></i>Eventos:</strong> 
+                                    <p class="mb-0"><strong><i class="fas fa-calendar-check me-2"></i>Eventos:</strong>
                                         <a href="tel:+343654321" class="text-info">+343 654 321</a>
                                     </p>
                                 </div>
@@ -103,8 +117,8 @@
                                     </div>
                                     <p class="mb-0 text-white">
                                         <i class="fas fa-globe me-2"></i>
-                                        Aunque Hallownest esté bajo tierra, nosotros estamos en todas partes. 
-                                   
+                                        Aunque Hallownest esté bajo tierra, nosotros estamos en todas partes.
+
                                     </p>
                                 </div>
                             </div>
@@ -117,7 +131,8 @@
                 <div class="col-lg-8 mx-auto">
                     <div class="card">
                         <div class="card-header">
-                            <h2 class="mb-0 text-white"><i class="fas fa-paper-plane me-2"></i>Formulario de contacto</h2>
+                            <h2 class="mb-0 text-white"><i class="fas fa-paper-plane me-2"></i>Formulario de contacto
+                            </h2>
                         </div>
                         <div class="card-body">
                             <form id="formulario-contacto" action="#" method="post" novalidate>
@@ -126,12 +141,8 @@
                                         <label for="nombre" class="form-label">
                                             <i class="fas fa-user me-2"></i>Nombre *
                                         </label>
-                                        <input type="text" 
-                                               class="form-control" 
-                                               id="nombre" 
-                                               name="nombre" 
-                                               required
-                                               placeholder="Tu nombre completo">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" required
+                                            placeholder="Tu nombre completo">
                                         <div class="invalid-feedback">
                                             Por favor, ingresa tu nombre.
                                         </div>
@@ -141,12 +152,8 @@
                                         <label for="correo" class="form-label">
                                             <i class="fas fa-envelope me-2"></i>Correo electrónico *
                                         </label>
-                                        <input type="email" 
-                                               class="form-control" 
-                                               id="correo" 
-                                               name="correo" 
-                                               required
-                                               placeholder="tu@correo.com">
+                                        <input type="email" class="form-control" id="correo" name="correo" required
+                                            placeholder="tu@correo.com">
                                         <div class="invalid-feedback">
                                             Por favor, ingresa un correo válido.
                                         </div>
@@ -158,11 +165,8 @@
                                         <label for="telefono" class="form-label">
                                             <i class="fas fa-phone me-2"></i>Teléfono (opcional)
                                         </label>
-                                        <input type="tel" 
-                                               class="form-control" 
-                                               id="telefono" 
-                                               name="telefono"
-                                               placeholder="+57 300 123 4567">
+                                        <input type="tel" class="form-control" id="telefono" name="telefono"
+                                            placeholder="+57 300 123 4567">
                                     </div>
 
                                     <div class="col-md-6 mb-3">
@@ -187,13 +191,8 @@
                                     <label for="mensaje" class="form-label">
                                         <i class="fas fa-comment me-2"></i>Mensaje *
                                     </label>
-                                    <textarea class="form-control" 
-                                              id="mensaje" 
-                                              name="mensaje" 
-                                              rows="5" 
-                                              required
-                                              placeholder="Escribe tu mensaje aquí..."
-                                              maxlength="1000"></textarea>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required
+                                        placeholder="Escribe tu mensaje aquí..." maxlength="1000"></textarea>
                                     <div class="form-text text-light">
                                         <span id="contador-caracteres">0</span>/1000 caracteres
                                     </div>
@@ -203,10 +202,7 @@
                                 </div>
 
                                 <div class="mb-3 form-check">
-                                    <input type="checkbox" 
-                                           class="form-check-input" 
-                                           id="politicas" 
-                                           required>
+                                    <input type="checkbox" class="form-check-input" id="politicas" required>
                                     <label class="form-check-label text-light" for="politicas">
                                         Acepto las políticas de privacidad y términos de uso *
                                     </label>
@@ -221,19 +217,16 @@
                                     </button>
                                     <button type="submit" class="btn btn-enviar">
                                         <i class="fas fa-paper-plane me-2"></i>Enviar mensaje
-                                        <span class="spinner-border spinner-border-sm ms-2 d-none" 
-                                              role="status" 
-                                              aria-hidden="true"></span>
+                                        <span class="spinner-border spinner-border-sm ms-2 d-none" role="status"
+                                            aria-hidden="true"></span>
                                     </button>
                                 </div>
                             </form>
 
                             <div class="mt-3">
                                 <div class="progress" style="height: 3px;">
-                                    <div class="progress-bar" 
-                                         role="progressbar" 
-                                         style="width: 0%"
-                                         id="progreso-formulario"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 0%"
+                                        id="progreso-formulario"></div>
                                 </div>
                             </div>
                         </div>
@@ -257,54 +250,47 @@
                             <div class="accordion" id="accordionFAQ">
                                 <div class="accordion-item bg-dark border-secondary">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-dark text-light border-0" 
-                                                type="button" 
-                                                data-bs-toggle="collapse" 
-                                                data-bs-target="#collapseOne">
+                                        <button class="accordion-button collapsed bg-dark text-light border-0"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
                                             ¿Cuánto tiempo tardan en responder?
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" 
-                                         class="accordion-collapse collapse" 
-                                         data-bs-parent="#accordionFAQ">
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFAQ">
                                         <div class="accordion-body bg-dark text-light">
                                             Normalmente respondemos en un plazo de 24-48 horas hábiles.
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="accordion-item bg-dark border-secondary">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-dark text-light border-0" 
-                                                type="button" 
-                                                data-bs-toggle="collapse" 
-                                                data-bs-target="#collapseTwo">
-                                            ¿Organizan eventos presenciales?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" 
-                                         class="accordion-collapse collapse" 
-                                         data-bs-parent="#accordionFAQ">
-                                        <div class="accordion-body bg-dark text-light">
-                                            Actualmente nos enfocamos en eventos online, pero estamos explorando opciones presenciales.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="accordion-item bg-dark border-secondary">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-dark text-light border-0" 
-                                                type="button" 
-                                                data-bs-toggle="collapse" 
-                                                data-bs-target="#collapseThree">
+                                        <button class="accordion-button collapsed bg-dark text-light border-0"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                            ¿Organizan eventos presenciales?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body bg-dark text-light">
+                                            Actualmente nos enfocamos en eventos online, pero estamos explorando
+                                            opciones presenciales.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item bg-dark border-secondary">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-dark text-light border-0"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
                                             ¿Cómo puedo colaborar con la comunidad?
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" 
-                                         class="accordion-collapse collapse" 
-                                         data-bs-parent="#accordionFAQ">
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFAQ">
                                         <div class="accordion-body bg-dark text-light">
-                                            Puedes contactarnos usando el formulario o escribiendo directamente a nuestro correo de proyectos.
+                                            Puedes contactarnos usando el formulario o escribiendo directamente a
+                                            nuestro correo de proyectos.
                                         </div>
                                     </div>
                                 </div>
@@ -316,38 +302,39 @@
         </div>
     </div>
 
-    <footer class="footer-contenido">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <p>&copy; 2025 Hollow Knight. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="lista-autores">
-                        <h5>Equipo</h5>
-                        <p>Andrés Alfonso</p>
-                        <p>Laura Báez</p>
-                        <p>Sergio González</p>
-                        <p>Natapa Guzmán</p>
-                        <p>Nataly Ochoa</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="datos">
-                        <h3>HOLLOW KNIGHT</h3>
-                        <p>hollow.knight@correo.com</p>
-                        <ul class="redes-sociales">
-                            <li><a href="#" data-bs-toggle="tooltip" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="#" data-bs-toggle="tooltip" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
-                            <li><a href="#" data-bs-toggle="tooltip" title="Contacto"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+   <footer class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5">
+    <div>
+      <p>&copy; 2025 Hollow Knight</p>
+      <p>Todos los derechos reservados.</p>
+    </div>
+    <div class="lista-autores d-flex">
+      <ul class="">
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Nataly Ochoa</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Natalia Guzmán</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li></a>
+      </ul>
+      <ul>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Laura Báez</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Sergio González</li></a>
+      </ul>
+    </div>
+    <div class="datos d-flex flex-lg-row flex-sm-column align-items-center">
+      <div class="text-center me-lg-5 me-1">
+        <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
+        <p>hollow.knight@hollowcomunidad.com</p>
+      </div>
+      <div class="redes-sociales d-flex flex-column">
+      
+        <a href="https://github.com/lmbaezp/blog_hollow_knight_bootstrap"><i class="bi bi-github fs-1"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
+        <a href="contacto.html"><i class="bi bi-envelope-fill fs-1"></i></a>
+      
+      </div>
+    </div>
+  </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
