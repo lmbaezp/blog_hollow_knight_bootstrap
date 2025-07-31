@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog Hollow Knight</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
   <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow">
+
+    <nav id="targetNavBar" class="navbar">
+      <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
+      <div class="nav-center-image">
+        <a href="index.html"><img src="Icono.png" alt="Personaje Hollow Knight" class="center-logo"></a>
       </div>
-            <div class="nav-center-image">
-        <img src="Icono.png" alt="Personaje Hollow Knight" class="center-logo">
-      </div>
-      <div class="nav-buttons">
-        <a href="index.html"><button>Inicio</button></a>
-        <a href="about.html"><button>¿Quiénes Somos?</button></a>
-        <a href="contacto.html"><button>Contáctanos</button></a>
-      </div>
+      <ul class="nav nav-pills">
+        <li class="nav-item m-2 dropdown">
+          <a class="nav-link nav-button dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Inicio</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item drop-item" href="#contenido">¿Qué es?</a></li>
+            <li><a class="dropdown-item drop-item" href="#mapa">Exploración y mapa</a></li>
+            <li><a class="dropdown-item drop-item" href="#jefes">Jefes memorables</a></li>
+          </ul>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link nav-button" href="about.html">¿Quienes somos?</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link nav-button" href="contacto.html">Contáctanos</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <main data-bs-spy="scroll" data-bs-target="#targetNavBar" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" tabindex="0">
     <!-- PERSONAJE -->
-    <section class="contenido">
+    <section id="contenido" class="contenido">
       <div class="info">
         <div class="texto">
           <h2>¿Qué es Hollow Knight?</h2>
-          <p>Hollow Knight es un juego de acción y aventura en 2D, desarrollado por el estudio independiente Team Cherry. Se desarrolla en un vasto reino subterráneo llamado Hallownest, habitado por insectos y criaturas extrañas.</p>
-          <p>El juego destaca por su dificultad desafiante, arte visual dibujado a mano, música atmosférica y lore profundo.</p>
+          <p>Hollow Knight es un juego de acción y aventura en 2D, desarrollado por el estudio independiente Team
+            Cherry. Se desarrolla en un vasto reino subterráneo llamado Hallownest, habitado por insectos y criaturas
+            extrañas.</p>
+          <p>El juego destaca por su dificultad desafiante, arte visual dibujado a mano, música atmosférica y lore
+            profundo.</p>
         </div>
         <div class="boton">
-           <button onclick="abrirModal('personajes')">Ver mas sobre los Personajes</button>
+          <button onclick="abrirModal('personajes')">Ver mas sobre los Personajes</button>
         </div>
       </div>
     </section>
 
     <!-- MAPA -->
-    <section class="contenido invertido">
+    <section id="mapa" class="contenido invertido">
       <div class="info">
         <div class="texto">
           <h2>Exploración y mapa</h2>
-          <p>Hallownest es un mundo interconectado lleno de zonas únicas como Greenpath, Deepnest, City of Tears y más. La exploración es clave, y cada rincón esconde secretos y desafíos.</p>
+          <p>Hallownest es un mundo interconectado lleno de zonas únicas como Greenpath, Deepnest, City of Tears y más.
+            La exploración es clave, y cada rincón esconde secretos y desafíos.</p>
         </div>
         <div class="boton">
           <button onclick="abrirModal('mapas')">Ver el mapa completo</button>
@@ -53,11 +74,12 @@
     </section>
 
     <!-- JEFES -->
-    <section class="contenido">
+    <section id="jefes" class="contenido">
       <div class="info">
         <div class="texto">
           <h2>Jefes memorables</h2>
-          <p>El juego presenta más de 40 jefes, cada uno con mecánicas únicas. Desde el ágil Hornet hasta el temible Radiance, los combates son intensos y gratificantes.</p>
+          <p>El juego presenta más de 40 jefes, cada uno con mecánicas únicas. Desde el ágil Hornet hasta el temible
+            Radiance, los combates son intensos y gratificantes.</p>
         </div>
         <div class="boton">
           <button onclick="abrirModal('jefes')">Conoce algunos de los Jefes</button>
@@ -65,33 +87,50 @@
       </div>
     </section>
     <!-- Modales ocultos -->
-<div id="modal" class="modal">
-  <div class="modal-contenido">
-    <span class="cerrar" onclick="cerrarModal()">&times;</span>
-    <div id="modal-texto"></div>
-    <img id="modal-imagen" src="" alt="Imagen informativa" />
-  </div>
-</div>
+    <div id="modal" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <div id="modal-texto"></div>
+        <img id="modal-imagen" src="" alt="Imagen informativa" />
+      </div>
+    </div>
   </main>
-  <footer class="footer-contenido">
-    <p>&copy; 2025 Hollow Knight. Todos los derechos reservados.</p>
-    <div class="lista-autores">
-      <p>Andrés Alfonso</p>
-      <p>Laura Báez</p>
-      <p>Sergio González</p>
-      <p>Natapa Guzmán</p>
-      <p>Nataly Ochoa</p>
+
+  <footer class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5">
+    <div>
+      <p>&copy; 2025 Hollow Knight</p>
+      <p>Todos los derechos reservados.</p>
     </div>
-    <div class="datos">
-      <h3>HOLLOW KNIGHT</h3>
-      <p>hollow.knight@correo.com</p>
+    <div class="lista-autores d-flex">
+      <ul class="">
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Nataly Ochoa</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Natalia Guzmán</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li></a>
+      </ul>
+      <ul>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Laura Báez</li></a>
+        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Sergio González</li></a>
+      </ul>
     </div>
-    <ul class="redes-sociales">
-      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
+    <div class="datos d-flex flex-lg-row flex-sm-column align-items-center">
+      <div class="text-center me-lg-5 me-1">
+        <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
+        <p>hollow.knight@hollowcomunidad.com</p>
+      </div>
+      <div class="redes-sociales d-flex flex-column">
+      
+        <a href="https://github.com/lmbaezp/blog_hollow_knight_bootstrap"><i class="bi bi-github fs-1"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
+        <a href="contacto.html"><i class="bi bi-envelope-fill fs-1"></i></a>
+      
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
