@@ -1,17 +1,17 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Tipografía oscura */
 body {
-  margin: 0;
-  background-image: url('https://images2.alphacoders.com/806/806254.jpg');
-  background-size: cover;
-  font-family: sans-serif;
-  color: white;
+    margin: 0;
+    background-image: url('https://images2.alphacoders.com/806/806254.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    color: white;
 }
 
 /* Navegación */
@@ -76,6 +76,7 @@ nav .dropdown-item:active {
   height: 50px;
   object-fit: contain;
 }
+
 /* Espaciado para compensar el nav fijo */
 main {
   padding-top: 120px;
@@ -220,7 +221,7 @@ footer .link-equipo {
 }
 
 .bloque-texto:hover {
-  border-color: #888; /* Cambia color al pasar el mouse */
+  border-color: #888;
 }
 
 .bloque-texto p {
@@ -228,94 +229,125 @@ footer .link-equipo {
 }
 
 strong {
-  color: #90caf9; /* azul claro para destacar palabras como SCRUM o Hollow Knight */
+  color: #90caf9;
 }
 /* CONTACTO */
 .contact-section {
-  max-width: 700px;
-  margin: auto;
-  background-color: #1a1a2e;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #000;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin-top: 120px;
 }
 
 label {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: white;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 1em;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
 }
 
 textarea {
-  font-family: Arial, sans-serif;
-  font-size: 1.1em;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  resize: vertical;
-  box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: vertical;
+    box-sizing: border-box;
 }
 
-.contact-section button {
-  margin-top: 15px;
-  background-color: #4a90e2;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.contact-section .btn-enviar {
+    margin-top: 15px;
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.contact-section button:hover {
-  background-color: #357ab8;
+.contact-section .btn-enviar:hover {
+    background-color: #357ab8;
 }
 
 .info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .info .texto {
-  flex: 1 1 60%;
+    flex: 1 1 60%;
 }
 
 .info .boton {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: flex-end;
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .info .boton button {
-  padding: 12px 24px;
-  font-size: 1rem;
-  background-color: #444;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .info .boton button:hover {
-  background-color: #666;
+    background-color: #666;
 }
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contacto-titulo {
+    color: white;
+}
+.card-header h3 {
+    color: white;
+}
+
+.info-contacto .columna {
+    flex: 1;
+    min-width: 250px;
+    
+}
+.info-contacto .columna h3 {
+    color: white;
+}
+
+.formulario-contacto {
+    margin-top: 40px;
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -341,20 +373,20 @@ textarea {
     font-size: 1rem;
   }
 }
-/* Asegura que el contenido no se esconda detrás del nav */
+
 main {
-  padding: 6rem 2rem 2rem; /* Empuja hacia abajo el contenido */
+  padding: 6rem 2rem 2rem; 
   max-width: 800px;
   margin: 0 auto;
   color: #eee;
 }
 
-/* Título que no se esconda */
+
 .titulo-seccion {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Contenedor del equipo */
@@ -364,12 +396,26 @@ main {
   gap: 1rem;
 }
 
-/* Estilo individual de cada miembro */
+
 .miembro {
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05);
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); */
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+  font-family: 'Georgia', serif;
+}
+.miembro:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 20px rgba(150, 200, 255, 0.5);
+  background-color: #29293d;
+  color: #ffffff;
 }
 
 /* Texto del miembro */
@@ -408,6 +454,45 @@ main {
 .formulario-contacto {
   margin-top: 40px; /* Aumenta la separación superior */
 }
+
+.formulario-contacto h2,
+.preguntas-frecuentes h2 {
+    color: white;
+}
+.alert-success {
+    background-color: #1e3a2e !important;
+    border-color: #4caf50 !important;
+    color: #4caf50 !important;
+}
+
+.btn-outline-primary {
+    border-color: #4a90e2 !important;
+    color: #4a90e2 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4a90e2 !important;
+    border-color: #4a90e2 !important;
+}
+
+.card {
+    background-color: #2c2c3e !important;
+    border-color: #444 !important;
+}
+
+.card-header {
+    background-color: #1a1a2e !important;
+    border-bottom-color: #444 !important;
+}
+
+.progress {
+    background-color: #333 !important;
+}
+
+.progress-bar {
+    background-color: #4a90e2 !important;
+}
+
 /* Modal base */
 .modal {
   display: none;
@@ -464,4 +549,151 @@ main {
 .contenido-izquierda p,
 .contenido-izquierda h3 {
   text-align: center;
+}
+/* Estilo y Flip de tarjetas */
+
+/* Asegúrate de que el modal no interfiera */
+#modal {
+  z-index: 1050; /* por debajo de las tarjetas si es necesario */
+}
+
+/* Flip Card general */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 320px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #1e1e2f;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 1rem;
+}
+
+.flip-card-front img {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.personajes-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1050;
+}
+
+.personajes-overlay .flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 320px;
+}
+
+.personajes-overlay .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.personajes-overlay .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.jefes-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 30, 0.95);
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+
+.jefes-overlay .flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 320px;
+}
+
+.jefes-overlay .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.jefes-overlay .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #1e1e2f;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  padding: 1rem;
+}
+
+.flip-card-front img {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+.personajes-overlay,
+.jefes-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1050; /* más alto que otros elementos */
+}
+
+.d-none {
+  display: none !important;
 }
