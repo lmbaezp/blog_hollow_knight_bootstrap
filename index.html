@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog Hollow Knight</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -60,10 +61,155 @@
           <p>El juego presenta más de 40 jefes, cada uno con mecánicas únicas. Desde el ágil Hornet hasta el temible Radiance, los combates son intensos y gratificantes.</p>
         </div>
         <div class="boton">
-          <button onclick="abrirModal('jefes')">Conoce algunos de los Jefes</button>
+         <button class="btn btn-primary" onclick="toggleOverlay()">Ver más sobre los jefes</button>
         </div>
       </div>
     </section>
+
+   <div id="jefesOverlay" class="jefes-overlay d-none">
+  <div class="overlay-content container py-5">
+    <h2 class="text-center text-white mb-4">Jefes memorables</h2>
+    <div class="row justify-content-center gy-4">
+      
+      <div class="row justify-content-center g-4 mt-4">
+      <!-- Tarjeta 1 -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Falso_Caballero.png" alt="Falso Caballero" class="img-fluid">
+          <p class="mt-2">Falso Caballero</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Falso Caballero</h5>
+          <p><strong>Ubicación:</strong> Cruces Olvidados, Hogar de Dioses</p>
+          <p>Uno de los primeros jefes. Tiene el Emblema de la Ciudad. Forma onírica: Campeón Fallido.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Gran_Sabio.png" alt="Gran Sabio del Aguijón Sly" class="img-fluid">
+          <p class="mt-2">Sly</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Gran Sabio del Aguijón Sly</h5>
+          <p><strong>Ubicación:</strong> Hogar de Dioses</p>
+          <p>Introducido en el DLC Buscador de Dioses. En el Panteón del Sabio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Grimm.png" alt="Grimm" class="img-fluid">
+          <p class="mt-2">Grimm</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Grimm</h5>
+          <p><strong>Ubicación:</strong> Bocasucia, Hogar de Dioses</p>
+          <p>Jefe y NPC principal del DLC "La Compañía de Grimm".</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Hornet.png" alt="Hornet" class="img-fluid">
+          <p class="mt-2">Hornet</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Hornet</h5>
+          <p><strong>Ubicación:</strong> Aparece en múltiples zonas del mapa</p>
+          <p>Encuentros frecuentes. Personaje clave en la historia y jefes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Señores_Mantis.png" alt="Señores Mantis" class="img-fluid">
+          <p class="mt-2">Señores Mantis</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Señores Mantis</h5>
+          <p><strong>Ubicación:</strong> Aldea Mantis</p>
+          <p>Jefe opcional. Derrotarlos da acceso seguro a su aldea.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Hollow_Knight.png" alt="Hollow Knight" class="img-fluid">
+          <p class="mt-2">Hollow Knight</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Hollow Knight</h5>
+          <p><strong>Ubicación:</strong> Templo del Huevo Negro</p>
+          <p>Jefe principal. Figura central del viaje del Caballero.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Destello.png" alt="Destello" class="img-fluid">
+          <p class="mt-2">Destello</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Destello</h5>
+          <p><strong>Ubicación:</strong> Templo del Huevo Negro</p>
+          <p>Jefe final secreto. Forma perfecta: Absoluto Destello.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Zote.png" alt="Zote" class="img-fluid">
+          <p class="mt-2">Zote el Todopoderoso</p>
+        </div>
+        <div class="flip-card-back">
+          <h5>Zote el Todopoderoso</h5>
+          <p><strong>Ubicación:</strong> Varias zonas, como Greenpath, Bocasucia y Coliseo</p>
+          <p>Viajero arrogante con múltiples apariciones. Promesa de gloria.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+      
+    </div>
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-light" onclick="toggleOverlay()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
     <!-- Modales ocultos -->
 <div id="modal" class="modal">
   <div class="modal-contenido">
@@ -93,5 +239,6 @@
     </ul>
   </footer>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

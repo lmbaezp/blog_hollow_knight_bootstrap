@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+
+
 function abrirModal(seccion) {
   const modal = document.getElementById("modal");
   const modalTexto = document.getElementById("modal-texto");
@@ -26,6 +28,8 @@ function abrirModal(seccion) {
 
   let contenido = "";
   let imagen = "";
+
+
 
   switch(seccion) {
     case 'mapas':
@@ -134,114 +138,9 @@ function abrirModal(seccion) {
   `;
   modalImagen.style.display = "none";
   break;
-    case 'jefes':
-      contenido = `
-    <div class="info-section">
-      <div class="info-text">
-        <h3>Falso Caballero</h3>
-        <p><strong>Descripción:</strong> Uno de los primeros Jefes de Hollow Knight. Tiene el Emblema de la Ciudad, necesario para abrir la Ciudad de Lágrimas. Su forma Onírica es Campeón Fallido.</p>
-        <p><strong>Ubicación:</strong> Cruces Olvidados, Hogar de Dioses</p>
-      </div>
-      <div class="info-img">
-        <img src="Falso_Caballero.png" alt="Falso Caballero">
-      </div>
-    </div>
-
-    <div class="info-section">
-      <div class="info-text">
-        <h3>Gran Sabio del Aguijón Sly</h3>
-        <p><strong>Descripción:</strong> Introducido en el DLC Buscador de Dioses. Te espera en el Panteón del Sabio.</p>
-        <p><strong>Ubicación:</strong> Hogar de Dioses</p>
-      </div>
-      <div class="info-img">
-        <img src="Gran_Sabio.png" alt="Sly">
-      </div>
-    </div>
-
-    <div class="info-section">
-      <div class="info-text">
-        <h3>Grimm</h3>
-        <p><strong>Descripción:</strong> Jefe y NPC principal del DLC "La Compañía de Grimm".</p>
-        <p><strong>Ubicación:</strong> Bocasucia, Hogar de Dioses</p>
-      </div>
-      <div class="info-img">
-        <img src="Grimm.png" alt="Grimm">
-      </div>
-    </div>
-
-        <div class="info-section">
-      <div class="info-text">
-        <h3>Hornet</h3>
-        <p><strong>Descripción:</strong> Es un personaje que se encontrará seis veces, cinco de ellas en la historia del juego y la última en el jefe final.</p>
-        <p><strong>Ubicación:</strong> Greenpath
-			City of Tears
-			Kingdom's Edge
-			Deepnest
-			Ancient Basin
-			Forgotten Crosssroads</p>
-      </div>
-      <div class="info-img">
-        <img src="Hornet.png" alt="Grimm">
-      </div>
-    </div>
-
-        <div class="info-section">
-      <div class="info-text">
-        <h3>Señores Mantis</h3>
-        <p><strong>Descripción:</strong>Los Señores Mantis son un jefe opcional en Hollow Knight. Derrotarlos garantiza un paso seguro por la Aldea Mantis. Las  Hermanas de Batalla son su forma más fuerte.</p>
-        <p><strong>Ubicación:</strong> Greenpath
-Aldea Mantis</p>
-      </div>
-      <div class="info-img">
-        <img src="Señores_Mantis.png" alt="Grimm">
-      </div>
-    </div>
-
-        <div class="info-section">
-      <div class="info-text">
-        <h3>Hollow Knight</h3>
-        <p><strong>Descripción:</strong>El Hollow Knight es uno de los Jefes principales de Hollow Knight. Es el centro (por decirlo de alguna forma) del viaje del Caballero y la historia de Hallownest. Vasija Pura es su forma no infectada.</p>
-        <p><strong>Ubicación:</strong> Greenpath
-Templo del Huevo Negro</p>
-      </div>
-      <div class="info-img">
-        <img src="Hollow_Knight.png" alt="Grimm">
-      </div>
-    </div>
-
-         <div class="info-section">
-      <div class="info-text">
-        <h3>Destello</h3>
-        <p><strong>Descripción:</strong>El Destello es el jefe final secreto de Hollow Knight. Absoluto Destello es su forma perfecta.</p>
-        <p><strong>Ubicación:</strong> Greenpath
-Templo del Huevo Negro</p>
-      </div>
-      <div class="info-img">
-        <img src="Destello.png" alt="Grimm">
-      </div>
-    </div>
-
-        <div class="info-section">
-      <div class="info-text">
-        <h3>Zote el Todopoderoso</h3>
-        <p><strong>Descripción:</strong>Zote es un viajero de las afueras de Hallownest. Él vino al reino para cumplir una promesa; después se revela que fue una promesa de gloria para si mismo. Tiene cinco apariciones en la historia.</p>
-        <p><strong>Ubicación:</strong> Greenpath
-			Sendero Verde
-			Bocasucia
-			Ciudad de lágrimas
-			Nido Profundo
-			Coliseo de los insensatos</p>
-      </div>
-      <div class="info-img">
-        <img src="Zote.png" alt="Grimm">
-      </div>
-    </div>
-  `;
-  modalImagen.style.display = "none";
-  break;
   }
 
-  modalTexto.innerHTML = contenido;
+ modalTexto.innerHTML = contenido;
   modalImagen.src = imagen;
   modal.style.display = "block";
 }
@@ -249,3 +148,7 @@ Templo del Huevo Negro</p>
 function cerrarModal() {
   document.getElementById("modal").style.display = "none";
 }
+  function toggleOverlay() {
+    const overlay = document.getElementById('jefesOverlay');
+    overlay.classList.toggle('d-none');
+  }
