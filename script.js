@@ -220,6 +220,7 @@ function abrirModal(seccion) {
   break;
     case 'jefes':
       contenido = `
+  <div class="container">
     <div class="info-section">
       <div class="info-text">
         <h3>Falso Caballero</h3>
@@ -227,7 +228,9 @@ function abrirModal(seccion) {
         <p><strong>Ubicación:</strong> Cruces Olvidados, Hogar de Dioses</p>
       </div>
       <div class="info-img">
-        <img src="Falso_Caballero.png" alt="Falso Caballero">
+          <a href="https://youtu.be/kUOz_QPTkSk" data-bs-toggle="tooltip" title="Ver guía de como vencer al Falso Caballero">
+            <img src="Falso_Caballero.png" alt="Falso Caballero" class="img-fluid">
+          </a>
       </div>
     </div>
 
@@ -238,7 +241,9 @@ function abrirModal(seccion) {
         <p><strong>Ubicación:</strong> Hogar de Dioses</p>
       </div>
       <div class="info-img">
-        <img src="Gran_Sabio.png" alt="Sly">
+          <a href="https://www.youtube.com/watch?v=k4PY88Ikc-Y" data-bs-toggle="tooltip" title="Ver guía de como vencer al Gran Sabio del Aguijón Sly">
+            <img src="Gran_Sabio.png" alt="Gran Sabio del Aguijon Sly" class="img-fluid">
+          </a>
       </div>
     </div>
 
@@ -249,7 +254,9 @@ function abrirModal(seccion) {
         <p><strong>Ubicación:</strong> Bocasucia, Hogar de Dioses</p>
       </div>
       <div class="info-img">
-        <img src="Grimm.png" alt="Grimm">
+          <a href="https://www.youtube.com/watch?v=LQ7E6uFTtsk" data-bs-toggle="tooltip" title="Ver guía de como vencer al Grimm">
+            <img src="Grimm.png" alt="Grimm" class="img-fluid">
+          </a>
       </div>
     </div>
 
@@ -265,7 +272,9 @@ function abrirModal(seccion) {
 			Forgotten Crosssroads</p>
       </div>
       <div class="info-img">
-        <img src="Hornet.png" alt="Grimm">
+          <a href="https://www.youtube.com/watch?v=VLQzP4WMisI" data-bs-toggle="tooltip" title="Ver guía de como vencer a Hornet">
+            <img src="Hornet.png" alt="Hornet" class="img-fluid">
+          </a>
       </div>
     </div>
 
@@ -274,10 +283,12 @@ function abrirModal(seccion) {
         <h3>Señores Mantis</h3>
         <p><strong>Descripción:</strong>Los Señores Mantis son un jefe opcional en Hollow Knight. Derrotarlos garantiza un paso seguro por la Aldea Mantis. Las  Hermanas de Batalla son su forma más fuerte.</p>
         <p><strong>Ubicación:</strong> Greenpath
-Aldea Mantis</p>
+        Aldea Mantis</p>
       </div>
       <div class="info-img">
-        <img src="Señores_Mantis.png" alt="Grimm">
+          <a href="https://www.youtube.com/watch?v=-zctr03cJjY&t=10s" data-bs-toggle="tooltip" title="Ver guía de como vencer a Señores Mantis">
+            <img src="Señores_Mantis.png" alt="Señores_Mantis" class="img-fluid">
+          </a>
       </div>
     </div>
 
@@ -289,7 +300,9 @@ Aldea Mantis</p>
 Templo del Huevo Negro</p>
       </div>
       <div class="info-img">
-        <img src="Hollow_Knight.png" alt="Grimm">
+          <a href="https://youtu.be/v7621GGwnk0?t=565" data-bs-toggle="tooltip" title="Ver guía de como vencer a Hollow Knight">
+            <img src="Hollow_Knight.png" alt="Hollow_Knight" class="img-fluid">
+          </a>
       </div>
     </div>
 
@@ -301,7 +314,9 @@ Templo del Huevo Negro</p>
 Templo del Huevo Negro</p>
       </div>
       <div class="info-img">
-        <img src="Destello.png" alt="Grimm">
+          <a href="https://www.youtube.com/watch?v=n7ajO5-sK4Y" data-bs-toggle="tooltip" title="Ver guía de como vencer a Destello">
+            <img src="Destello.png" alt="Destello" class="img-fluid">
+          </a>
       </div>
     </div>
 
@@ -317,9 +332,12 @@ Templo del Huevo Negro</p>
 			Coliseo de los insensatos</p>
       </div>
       <div class="info-img">
-        <img src="Zote.png" alt="Grimm">
+          <a href="https://www.youtube.com/watch?v=H48-CUnx32M" data-bs-toggle="tooltip" title="Ver guía de como vencer a Zote el Todopoderoso">
+            <img src="Zote.png" alt="Zote" class="img-fluid">
+          </a>
       </div>
     </div>
+  </div>
   `;
   modalImagen.style.display = "none";
   break;
