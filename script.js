@@ -136,6 +136,7 @@ function abrirModal(seccion) {
   break;
     case 'jefes':
       contenido = `
+  <div class="container">
     <div class="info-section">
       <div class="info-text">
         <h3>Falso Caballero</h3>
@@ -252,6 +253,7 @@ Templo del Huevo Negro</p>
           </a>
       </div>
     </div>
+  </div>
   `;
   modalImagen.style.display = "none";
   break;
