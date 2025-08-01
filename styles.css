@@ -745,3 +745,14 @@ main {
   justify-content: space-between;
   height: 100%;
 }
+.flip-card-back p:last-child {
+  margin-top: auto;
+  font-weight: bold;
+}
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 1rem;
+}
