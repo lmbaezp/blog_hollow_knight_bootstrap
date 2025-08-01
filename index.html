@@ -1,271 +1,598 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Hollow Knight</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Hollow Knight</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <header>
+      <nav id="targetNavBar" class="navbar">
+        <a href="index.html"
+          ><img
+            src="logo_hollow_knight.png"
+            alt="Logo Hollow Knight"
+            class="logo-hollow"
+        /></a>
+        <div class="nav-center-image">
+          <a href="index.html"
+            ><img
+              src="Icono.png"
+              alt="Personaje Hollow Knight"
+              class="center-logo"
+          /></a>
+        </div>
+        <ul class="nav nav-pills">
+          <li class="nav-item m-2 dropdown">
+            <a
+              class="nav-link nav-button dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Inicio</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item drop-item" href="index.html#contenido"
+                  >¿Qué es?</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item drop-item" href="index.html#mapa"
+                  >Exploración y mapa</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item drop-item" href="index.html#jefes"
+                  >Jefes memorables</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link nav-button" href="about.html">¿Quienes somos?</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link nav-button" href="contacto.html">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
+    <main>
+      <!-- PERSONAJE -->
+      <section id="contenido" class="contenido">
+        <div class="info">
+          <div class="texto">
+            <h2>¿Qué es Hollow Knight?</h2>
+            <p>
+              Hollow Knight es un juego de acción y aventura en 2D, desarrollado
+              por el estudio independiente Team Cherry. Se desarrolla en un
+              vasto reino subterráneo llamado Hallownest, habitado por insectos
+              y criaturas extrañas.
+            </p>
+            <p>
+              El juego destaca por su dificultad desafiante, arte visual
+              dibujado a mano, música atmosférica y lore profundo.
+            </p>
+          </div>
+          <div class="boton">
+            <button class="btn btn-primary" onclick="toggleOverlay2()">
+              Ver mas personajes
+            </button>
+          </div>
+        </div>
+      </section>
 
-  <header>
+      <div id="personajesOverlay" class="personajes-overlay d-none">
+        <div class="overlay-content container py-5">
+          <h2 class="text-center text-white mb-4">Personajes Principales</h2>
+          <div class="row justify-content-center gy-4">
+            <div class="row justify-content-center g-3 mt-4">
+              <!-- Tarjeta 1 -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="ElCaballero.jpg"
+                        alt="El Caballero"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">El Caballero</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🦗 El Caballero</h5><br>
+                      <p><strong>Ubicación:</strong> Todo Hallownest</p>
+                      <p>
+                        Protagonista silencioso que porta un aguijón y
+                        habilidades mágicas. Su pasado está ligado a los
+                        secretos del reino.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-    <nav id="targetNavBar" class="navbar">
-      <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
-      <div class="nav-center-image">
-        <a href="index.html"><img src="Icono.png" alt="Personaje Hollow Knight" class="center-logo"></a>
-      </div>
-      <ul class="nav nav-pills">
-        <li class="nav-item m-2 dropdown">
-          <a class="nav-link nav-button dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-            aria-expanded="false">Inicio</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item drop-item" href="index.html#contenido">¿Qué es?</a></li>
-            <li><a class="dropdown-item drop-item" href="index.html#mapa">Exploración y mapa</a></li>
-            <li><a class="dropdown-item drop-item" href="index.html#jefes">Jefes memorables</a></li>
-          </ul>
-        </li>
-        <li class="nav-item m-2">
-          <a class="nav-link nav-button" href="about.html">¿Quienes somos?</a>
-        </li>
-        <li class="nav-item m-2">
-          <a class="nav-link nav-button" href="contacto.html">Contáctanos</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Quirrel.jpg" alt="Quirrel" class="img-fluid" />
+                      <p class="mt-2">Quirrel</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🧢 Quirrel</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Varias zonas de Hallownest
+                      </p>
+                      <p>
+                        Viajero curioso que acompaña al jugador. Su historia se
+                        entrelaza con Monomon la Sabia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-  <main>
-    <!-- PERSONAJE -->
-    <section id="contenido" class="contenido">
-      <div class="info">
-        <div class="texto">
-          <h2>¿Qué es Hollow Knight?</h2>
-          <p>Hollow Knight es un juego de acción y aventura en 2D, desarrollado por el estudio independiente Team Cherry. Se desarrolla en un vasto reino subterráneo llamado Hallownest, habitado por insectos y criaturas extrañas.</p>
-          <p>El juego destaca por su dificultad desafiante, arte visual dibujado a mano, música atmosférica y lore profundo.</p>
-        </div>
-        <div class="boton">
-           <button onclick="abrirModal('personajes')">Ver mas sobre los Personajes</button>
-        </div>
-      </div>
-    </section>
- 
-    <!-- MAPA -->
-    <section id="mapa" class="contenido invertido">
-      <div class="info">
-        <div class="texto">
-          <h2>Exploración y mapa</h2>
-          <p>Hallownest es un mundo interconectado lleno de zonas únicas como Greenpath, Deepnest, City of Tears y más. La exploración es clave, y cada rincón esconde secretos y desafíos.</p>
-        </div>
-        <div class="boton">
-          <button onclick="abrirModal('mapas')">Ver el mapa completo</button>
-        </div>
-      </div>
-    </section>
- 
-    <!-- JEFES -->
-    <section id="jefes" class="contenido">
-      <div class="info">
-        <div class="texto">
-          <h2>Jefes memorables</h2>
-          <p>El juego presenta más de 40 jefes, cada uno con mecánicas únicas. Desde el ágil Hornet hasta el temible Radiance, los combates son intensos y gratificantes.</p>
-        </div>
-        <div class="boton">
-         <button class="btn btn-primary" onclick="toggleOverlay()">Ver más sobre los jefes</button>
-        </div>
-      </div>
-    </section>
- 
-   <div id="jefesOverlay" class="jefes-overlay d-none">
-  <div class="overlay-content container py-5">
-    <h2 class="text-center text-white mb-4">Jefes memorables</h2>
-    <div class="row justify-content-center gy-4">
-     
-      <div class="row justify-content-center g-4 mt-4">
-      <!-- Tarjeta 1 -->
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Falso_Caballero.png" alt="Falso Caballero" class="img-fluid">
-          <p class="mt-2">Falso Caballero</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Falso Caballero</h5>
-          <p><strong>Ubicación:</strong> Cruces Olvidados, Hogar de Dioses</p>
-          <p>Uno de los primeros jefes. Tiene el Emblema de la Ciudad. Forma onírica: Campeón Fallido.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Gran_Sabio.png" alt="Gran Sabio del Aguijón Sly" class="img-fluid">
-          <p class="mt-2">Sly</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Gran Sabio del Aguijón Sly</h5>
-          <p><strong>Ubicación:</strong> Hogar de Dioses</p>
-          <p>Introducido en el DLC Buscador de Dioses. En el Panteón del Sabio.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Grimm.png" alt="Grimm" class="img-fluid">
-          <p class="mt-2">Grimm</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Grimm</h5>
-          <p><strong>Ubicación:</strong> Bocasucia, Hogar de Dioses</p>
-          <p>Jefe y NPC principal del DLC "La Compañía de Grimm".</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Hornet.png" alt="Hornet" class="img-fluid">
-          <p class="mt-2">Hornet</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Hornet</h5>
-          <p><strong>Ubicación:</strong> Aparece en múltiples zonas del mapa</p>
-          <p>Encuentros frecuentes. Personaje clave en la historia y jefes.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Señores_Mantis.png" alt="Señores Mantis" class="img-fluid">
-          <p class="mt-2">Señores Mantis</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Señores Mantis</h5>
-          <p><strong>Ubicación:</strong> Aldea Mantis</p>
-          <p>Jefe opcional. Derrotarlos da acceso seguro a su aldea.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Hollow_Knight.png" alt="Hollow Knight" class="img-fluid">
-          <p class="mt-2">Hollow Knight</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Hollow Knight</h5>
-          <p><strong>Ubicación:</strong> Templo del Huevo Negro</p>
-          <p>Jefe principal. Figura central del viaje del Caballero.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Destello.png" alt="Destello" class="img-fluid">
-          <p class="mt-2">Destello</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Destello</h5>
-          <p><strong>Ubicación:</strong> Templo del Huevo Negro</p>
-          <p>Jefe final secreto. Forma perfecta: Absoluto Destello.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 col-sm-6 col-lg-3">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./Zote.png" alt="Zote" class="img-fluid">
-          <p class="mt-2">Zote el Todopoderoso</p>
-        </div>
-        <div class="flip-card-back">
-          <h5>Zote el Todopoderoso</h5>
-          <p><strong>Ubicación:</strong> Varias zonas, como Greenpath, Bocasucia y Coliseo</p>
-          <p>Viajero arrogante con múltiples apariciones. Promesa de gloria.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-</div>
-     
-    </div>
-    <div class="text-center mt-4">
-      <button class="btn btn-outline-light" onclick="toggleOverlay()">Cerrar</button>
-    </div>
-  </div>
-</div>
- 
-    <!-- Modales ocultos -->
-<div id="modal" class="modal">
-  <div class="modal-contenido">
-    <span class="cerrar" onclick="cerrarModal()">&times;</span>
-    <div id="modal-texto"></div>
-    <img id="modal-imagen" src="" alt="Imagen informativa" />
-  </div>
-</div>
-  </main>
-  <footer class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5">
-    <div>
-      <p>&copy; 2025 Hollow Knight</p>
-      <p>Todos los derechos reservados.</p>
-    </div>
-    <div class="lista-autores d-flex">
-      <ul class="">
-        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Nataly Ochoa</li></a>
-        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Natalia Guzmán</li></a>
-        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li></a>
-      </ul>
-      <ul>
-        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Laura Báez</li></a>
-        <a href="about.html" class="link-equipo text-center"><li class="equipo m-lg-2 p-lg-2">Sergio González</li></a>
-      </ul>
-    </div>
-    <div class="datos d-flex flex-lg-row flex-sm-column align-items-center">
-      <div class="text-center me-lg-5 me-1">
-        <a href="index.html"><img src="logo_hollow_knight.png" alt="Logo Hollow Knight" class="logo-hollow"></a>
-        <p>hollow.knight@hollowcomunidad.com</p>
-      </div>
-      <div class="redes-sociales d-flex flex-column">
-      
-        <a href="https://github.com/lmbaezp/blog_hollow_knight_bootstrap"><i class="bi bi-github fs-1"></i></a>
-        <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
-        <a href="contacto.html"><i class="bi bi-envelope-fill fs-1"></i></a>
-      
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
- 
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="Cornifer.png"
+                        alt="Cornifer"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Cornifer</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🗺️ Cornifer</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> En diferentes regiones del
+                        mapa
+                      </p>
+                      <p>
+                        Cartógrafo alegre que vende mapas. Su silbido lo delata
+                        en cada zona nueva.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Bretta.jpg" alt="Bretta" class="img-fluid" />
+                      <p class="mt-2">Bretta</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🐞 Bretta</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Fungal Wastes / Dirtmouth
+                      </p>
+                      <p>
+                        Escarabajo tímida que sueña con su héroe. Cambia tras
+                        ser rescatada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="Chaman.png"
+                        alt="Chamán del Caracol"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Chamán del Caracol</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🧙‍♂️ Chamán del Caracol</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Cueva oculta en Forgotten
+                        Crossroads
+                      </p>
+                      <p>
+                        Excéntrico personaje que entrega el primer hechizo al
+                        jugador.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Iselda.png" alt="Iselda" class="img-fluid" />
+                      <p class="mt-2">Iselda</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🧵 Iselda</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Tienda de mapas en Dirtmouth
+                      </p>
+                      <p>
+                        Esposa de Cornifer. Administra la tienda de mapas con
+                        actitud firme y seca.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="PadreLarva.jpg"
+                        alt="Iselda"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Padre Larva</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🐛 Padre Larva</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Dirtmouth - Cruces Olvidados
+                      </p>
+                      <p>
+                        También conocido como Grubfather. Su función
+                        principal es recompensar al Caballero por liberar a las
+                        larvas que están atrapadas en vasijas de cristal por
+                        todo Hallownest.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="DamaBlanca.jpg"
+                        alt="Iselda"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Dama Blanca</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>🕊 Dama Blanca</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Noroeste de los Jardines de
+                        la Reina
+                      </p>
+                      <p>
+                        Es un NPC con forma de raíz, dentro de una estructura con
+                        forma de capullo. Fuera, podemos encontrar el cadáver de
+                        Dryya. Tras hablar con ella, dará al jugador una mitad
+                        del Alma del Monarca.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button class="btn btn-outline-light" onclick="toggleOverlay2()">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAPA -->
+      <section id="mapa" class="contenido invertido">
+        <div class="info">
+          <div class="texto">
+            <h2>Exploración y mapa</h2>
+            <p>
+              Hallownest es un mundo interconectado lleno de zonas únicas como
+              Greenpath, Deepnest, City of Tears y más. La exploración es clave,
+              y cada rincón esconde secretos y desafíos.
+            </p>
+          </div>
+          <div class="boton">
+            <button onclick="abrirModal('mapas')">Ver el mapa completo</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- JEFES -->
+      <section id="jefes" class="contenido">
+        <div class="info">
+          <div class="texto">
+            <h2>Jefes memorables</h2>
+            <p>
+              El juego presenta más de 40 jefes, cada uno con mecánicas únicas.
+              Desde el ágil Hornet hasta el temible Radiance, los combates son
+              intensos y gratificantes.
+            </p>
+          </div>
+          <div class="boton">
+            <button class="btn btn-primary" onclick="toggleOverlay()">
+              Ver más sobre los jefes
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div id="jefesOverlay" class="jefes-overlay d-none">
+        <div class="overlay-content container py-5">
+          <h2 class="text-center text-white mb-4">Jefes memorables</h2>
+          <div class="row justify-content-center gy-4">
+            <div class="row justify-content-center g-4 mt-4">
+              <!-- Tarjeta 1 -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./Falso_Caballero.png"
+                        alt="Falso Caballero"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Falso Caballero</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Falso Caballero</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Cruces Olvidados, Hogar de
+                        Dioses
+                      </p>
+                      <p>
+                        Uno de los primeros jefes. Tiene el Emblema de la
+                        Ciudad. Forma onírica: Campeón Fallido.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./Gran_Sabio.png"
+                        alt="Gran Sabio del Aguijón Sly"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Sly</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Gran Sabio del Aguijón Sly</h5><br>
+                      <p><strong>Ubicación:</strong> Hogar de Dioses</p>
+                      <p>
+                        Introducido en el DLC Buscador de Dioses. En el Panteón
+                        del Sabio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="./Grimm.png" alt="Grimm" class="img-fluid" />
+                      <p class="mt-2">Grimm</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Grimm</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Bocasucia, Hogar de Dioses
+                      </p>
+                      <p>
+                        Jefe y NPC principal del DLC "La Compañía de Grimm".
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="./Hornet.png" alt="Hornet" class="img-fluid" />
+                      <p class="mt-2">Hornet</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Hornet</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Aparece en múltiples zonas
+                        del mapa
+                      </p>
+                      <p>
+                        Encuentros frecuentes. Personaje clave en la historia y
+                        jefes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./Señores_Mantis.png"
+                        alt="Señores Mantis"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Señores Mantis</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Señores Mantis</h5><br>
+                      <p><strong>Ubicación:</strong> Aldea Mantis</p>
+                      <p>
+                        Jefe opcional. Derrotarlos da acceso seguro a su aldea.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./Hollow_Knight.png"
+                        alt="Hollow Knight"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Hollow Knight</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Hollow Knight</h5><br>
+                      <p><strong>Ubicación:</strong> Templo del Huevo Negro</p>
+                      <p>
+                        Jefe principal. Figura central del viaje del Caballero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="./Destello.png"
+                        alt="Destello"
+                        class="img-fluid"
+                      />
+                      <p class="mt-2">Destello</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Destello</h5><br>
+                      <p><strong>Ubicación:</strong> Templo del Huevo Negro</p>
+                      <p>
+                        Jefe final secreto. Forma perfecta: Absoluto Destello.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="./Zote.png" alt="Zote" class="img-fluid" />
+                      <p class="mt-2">Zote el Todopoderoso</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h5>Zote el Todopoderoso</h5><br>
+                      <p>
+                        <strong>Ubicación:</strong> Varias zonas, como
+                        Greenpath, Bocasucia y Coliseo
+                      </p>
+                      <p>
+                        Viajero arrogante con múltiples apariciones. Promesa de
+                        gloria.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button class="btn btn-outline-light" onclick="toggleOverlay()">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modales ocultos -->
+      <div id="modal" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarModal()">&times;</span>
+          <div id="modal-texto"></div>
+          <img id="modal-imagen" src="" alt="Imagen informativa" />
+        </div>
+      </div>
+    </main>
+    <footer
+      class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5"
+    >
+      <div>
+        <p>&copy; 2025 Hollow Knight</p>
+        <p>Todos los derechos reservados.</p>
+      </div>
+      <div class="lista-autores d-flex">
+        <ul class="">
+          <a href="about.html" class="link-equipo text-center"
+            ><li class="equipo m-lg-2 p-lg-2">Nataly Ochoa</li></a
+          >
+          <a href="about.html" class="link-equipo text-center"
+            ><li class="equipo m-lg-2 p-lg-2">Natalia Guzmán</li></a
+          >
+          <a href="about.html" class="link-equipo text-center"
+            ><li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li></a
+          >
+        </ul>
+        <ul>
+          <a href="about.html" class="link-equipo text-center"
+            ><li class="equipo m-lg-2 p-lg-2">Laura Báez</li></a
+          >
+          <a href="about.html" class="link-equipo text-center"
+            ><li class="equipo m-lg-2 p-lg-2">Sergio González</li></a
+          >
+        </ul>
+      </div>
+      <div class="datos d-flex flex-lg-row flex-sm-column align-items-center">
+        <div class="text-center me-lg-5 me-1">
+          <a href="index.html"
+            ><img
+              src="logo_hollow_knight.png"
+              alt="Logo Hollow Knight"
+              class="logo-hollow"
+          /></a>
+          <p>hollow.knight@hollowcomunidad.com</p>
+        </div>
+        <div class="redes-sociales d-flex flex-column">
+          <a href="https://github.com/lmbaezp/blog_hollow_knight_bootstrap"
+            ><i class="bi bi-github fs-1"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="bi bi-instagram fs-1"></i
+          ></a>
+          <a href="contacto.html"><i class="bi bi-envelope-fill fs-1"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

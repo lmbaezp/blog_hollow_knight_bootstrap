@@ -165,7 +165,7 @@ function abrirModal(seccion) {
   `;
   modalImagen.style.display = "none";
   break;
-    case 'personajes':
+    /*case 'personajes':
   contenido = `
     <h3>Personajes de Hollow Knight</h3>
 <p>El mundo de <strong>Hollow Knight</strong> está habitado por misteriosos personajes que enriquecen la historia sin necesidad de largos diálogos. Cada encuentro revela pistas sobre el pasado de Hallownest y su caída.</p>
@@ -342,7 +342,7 @@ Templo del Huevo Negro</p>
   </div>
   `;
   modalImagen.style.display = "none";
-  break;
+  break;*/
   }
 
  modalTexto.innerHTML = contenido;
@@ -355,5 +355,9 @@ function cerrarModal() {
 }
   function toggleOverlay() {
     const overlay = document.getElementById('jefesOverlay');
+    overlay.classList.toggle('d-none');
+  }
+  function toggleOverlay2() {
+    const overlay = document.getElementById('personajesOverlay');
     overlay.classList.toggle('d-none');
   }

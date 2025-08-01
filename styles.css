@@ -231,11 +231,33 @@ footer .link-equipo {
 strong {
   color: #90caf9;
 }
+.tarjeta-info {
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.tarjeta-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 174, 255, 0.4);
+}
+.contenedor-angosto {
+  max-width: 900px; /* Puedes ajustar a 800px o 850px si lo quieres más angosto */
+}
+.contenedor-angosto2 {
+  max-width: 1000px; /* Puedes ajustar a 800px o 850px si lo quieres más angosto */
+}
+.contenedor-angosto3 {
+  max-width: 900px; /* Puedes ajustar a 800px o 850px si lo quieres más angosto */
+}
 /* CONTACTO */
 .contact-section {
     max-width: 1000px;
     margin: auto;
-    background-color: #1a1a2e;
+    background-color: #0a0a13;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
@@ -402,7 +424,7 @@ main {
   padding: 1rem 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); */
-  background-color: #1e1e2f;
+  background-color: #0f0f18;
   color: #e0e0e0;
   border-radius: 10px;
   padding: 15px;
@@ -476,7 +498,7 @@ main {
 }
  
 .card {
-    background-color: #2c2c3e !important;
+    background-color: #191924 !important;
     border-color: #444 !important;
 }
  
@@ -591,7 +613,7 @@ main {
 }
  
 .flip-card-front img {
-  max-height: 150px;
+  max-height: 250px;
   object-fit: contain;
 }
  
@@ -674,11 +696,6 @@ main {
   padding: 1rem;
 }
  
-.flip-card-front img {
-  max-height: 150px;
-  object-fit: contain;
-}
- 
 .flip-card-back {
   transform: rotateY(180deg);
 }
@@ -696,4 +713,35 @@ main {
  
 .d-none {
   display: none !important;
+}
+
+.jefe {
+  margin-top: auto;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nombre-jefe-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* opcional para contraste */
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.mt-2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
